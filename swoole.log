@@ -1,0 +1,7 @@
+[2017-06-14 21:09:10 $31296.0]	NOTICE	Server is reloading now.
+[2017-06-14 21:09:17 *31310.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Class 'swoole_redis' not found in /home/SwooleDistributedWeb/src/Server/Asyn/Redis/RedisAsynPool.php:320
+Stack trace:
+#0 /home/SwooleDistributedWeb/src/Server/Asyn/Redis/RedisAsynPool.php(373): Server\Asyn\Redis\RedisAsynPool->reconnect()
+#1 /home/SwooleDistributedWeb/src/Server/Asyn/AsynPool.php(123): Server\Asyn\Redis\RedisAsynPool->prepareOne()
+#2 /home/SwooleDistributedWeb/src/Server/Asyn/Redis/RedisAsynPool.php(61): Server\Asyn\AsynPool->s
+[2017-06-14 21:09:17 $31296.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
